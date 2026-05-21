@@ -1,0 +1,78 @@
+/* G00GLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;700&display=swap');
+
+/* VARIABLES CSS */
+:root{
+    --primary-color: #2563eb;
+    --secondary-color: #0f172a;
+    --dark-color:  #111827;
+    --light-color: #f8fafc;
+    --text-color: #374151;
+    --white-color: #ffffff;
+
+    --main-font: 'Poppins', sans-serif;
+    --title-font: 'Space Grotesk', sans-serif;
+
+    --spacing: 1rem;
+    --border-radius: 12px;
+    --transition: 0.3s ease;
+
+}
+/* RESET CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* BODY */
+body{
+    font-family: var(--main-font);
+    background-color: var(--light-color);
+    line-height: 1.6;
+    color: var(--text-color);
+}
+/* TITRES */
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--title-font);
+    color: var(--dark-color);
+}
+/* LIENS */
+a{
+    text-decoration: none;
+    transition: var(--transition);
+}
+/* NAVBAR */
+.navbar{
+    background-color: var(--white-color);
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0,1);
+}
+
+.navbar-brand{
+    font-family: var(--title-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color)
+}
+.nav-link{
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-left: 15px;
+}
+.nav-link:hover{
+    color: var(--primary-color);
+}
+/* SECTION */
+section{
+    padding: 80px 0;
+}
+/* BUTTONS */
+.btn-primary{
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 10px 20px;
+}
+.btn-primary:hover{
+    background-color: var(--secondary-color);
+}
