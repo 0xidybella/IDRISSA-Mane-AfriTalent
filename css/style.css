@@ -76,3 +76,103 @@ section{
 .btn-primary:hover{
     background-color: var(--secondary-color);
 }
+
+/* debut du commit 4 */
+@import url('https://googleapis.com');
+
+:root {
+    --primary-color:#ff6b35;
+    --secondary-color:#004e64;
+    --dark-text:#1a1a1a;
+    --light-bg:#f8f9fa;
+    --font-title:'syne', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+body {
+    font-family: var(--font-body);
+    color: var(--dark-text);
+}
+h1, h2, h3, h4, h5, .navbar-brand {
+    font-family: var(--font-title);
+    font-weight: 800;
+}
+
+/* mise en page hero */
+#hero {
+    background: linear-gradient(135deg, #fdfbf7 0%, #eef5f6 100%);
+    padding: 80px 0;
+}
+#hero h1{
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+}
+#hero .btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+}
+#hero img.hover {
+    transform: rotate(0deg) scale(1.02);
+}
+#hero img {
+    box-shadow: 0 20px 45px rgba(0, 78, 100, 0.12);
+    transform: rotate(-1,5deg); 
+    transition: all 0.4s ease;
+}
+#hero img:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+/* bento grid */
+#services {
+    background-color: var(--light-bg-section) !important;
+}
+#services {
+    color: var(--secondary-color);
+}
+@media (min-width: 992px){
+    #services .container > .now {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-auto-rows: minmax(220px, auto) !important;
+        gap: 24px !important;
+    }
+
+#service .container > .row > div:nth-child(1){
+    grid-column: span 2 !important;
+}
+#services .container >  .row > div{
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+    margin-bottom: 0 !important;
+}
+ }
+ #services .card {
+    width: 100% !important;
+    padding: 30px !important;
+    word-break: normal !important;
+ }
+ #services .card h3 {
+    font-size: 1.6rem !important;
+    margin-bottom: 12px;
+    color: var(--secondary-color);
+ }
+ /* effet hover */
+.card {
+    border: 1px solid rgba(0,0,0,0,1) !important;
+    border-radius: 24px !important;
+    background: #ffffff;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 22px 40px rgba(0, 78, 100, 0.09);
+    border-color: var(--primary-color) !important;
+}
+/* carousel temoignages */
+#carouselTemoignages .card{
+   border: none !important;
+   box-shadow: 0 10px 30px rgba(0,0,0,0,02);
+}
