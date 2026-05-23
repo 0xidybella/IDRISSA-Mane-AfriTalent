@@ -176,3 +176,78 @@ h1, h2, h3, h4, h5, .navbar-brand {
    border: none !important;
    box-shadow: 0 10px 30px rgba(0,0,0,0,02);
 }
+
+/* DEBUT DU COMMIT 5 */
+@media (max-width: 991px) {
+    /* navbar responsive */
+    .navbar-collapse {
+        background-color: #ffffff !important;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        margin-top: 10px;
+    }
+.navbar-dark .navbar-collapse {
+    background-color: var(--secondary-color, #004e64) !important;    
+}
+.navbar-dark .nav-link {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+}
+/* adaptation de la grille bootstrap et de la bento grid */
+@media (max-width: 991px) {
+    #services .container > .row {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+#services .container > .row > div,
+main .row .col-md-4,
+main .row .col-md-3 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    margin-bottom: 15px !important;
+}
+
+#hero img {
+    transform: none !important;
+    max-height: 300px !important;
+    object-fit: cover;
+}
+.card.border-primary {
+    transform: scale(1) !important;
+    margin-top: 20px;
+}
+ }
+
+ /* OPTIMISATION ERGOMIQUE POUR SMARTPHONES */
+ @media (max-width: 576px) {
+    #hero h1 {
+        font-size: 2.1rem !important;
+        line-height: 1.25 !important;
+    }
+ main h1.text-center, h2.text-center {
+    font-size: 1.8rem !important;
+    margin-bottom: 20px !important;
+ }
+ .py-5 {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+ }
+ .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+ }
+.btn, form .btn-primary, .form-control, .form-select {
+    width: 100% !important;
+    display: block !important;
+}
+.card-img-top {
+    height: 200px !important;
+}
+iframe {
+    height: 250px !important;
+}
+}
