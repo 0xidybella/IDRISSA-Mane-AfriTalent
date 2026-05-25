@@ -251,3 +251,42 @@ iframe {
     height: 250px !important;
 }
 }
+
+/* Debut COMMIT 6 */
+
+/* styles appliques  lorsque la classe .dark-theme est injectee */
+body.dark-theme {
+    background-color: #121212 !important;
+    color: #f8f9fa !important;
+}
+
+body.dark-theme .card,
+body.dark-theme .accordion-item,
+body.dark-theme .form-control,
+body.dark-theme .form-select {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-theme p,
+body.dark-theme .card-text {
+    color:#cccccc !important;
+}
+
+body.dark-theme #hero,
+body.dark-theme .bg-light {
+    background: linear-gradient(135deg, #1a1a1a 0%, #111827 100%) !important;
+}
+
+/* style de la navbar dynamique au sroll */
+.navbar {
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* classe injectee par le JS */
+.navbar.navbar-scrolled {
+    padding: 8px 0 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+    background-color: rgba(0, 78, 100, 0.95) !important;
+}
