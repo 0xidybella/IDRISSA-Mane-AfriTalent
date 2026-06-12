@@ -3,19 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriTalent</title>
-    <!-- Bootstrap 5 via CDN : CSS -->
-    <link href="https://jsdelivr.net" rel="stylesheet">
-    <!-- Feuille de style personnelle (vide) -->
+    <title>AfriTalent - Tarifs</title>
+    <!-- Bootstrap 5 via CDN : feuille de style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- votre feuille de style personnelle -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Aucun contenu ici pour le Commit 1 -->
+    <!-- Navbar commune -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">AfriTalent</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+   
+    <!-- Contenu principal -->
+    <main>
+        <!-- Section Cartes Tarifs -->
+        <section class="py-5">
+            <div class="container">
+                <h1 class="text-center mb-5">Nos Tarifs</h1>
+                <div class="row">
+                    <!-- Plan Gratuit -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center p-4">
+                            <h3>Gratuit</h3>
+                            <h2 class="my-3">0€</h2>
+                            <p>Création de profil</p>
+                            <p>Accès limité aux missions</p>
+                            <p>Support standard</p>
+                            <button class="btn btn-outline-primary">Commencer</button>
+                        </div>
+                    </div>
+
+                    <!-- Plan Pro -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center p-4 border-primary">
+                            <h3>Pro</h3>
+                            <h2 class="my-3">25€</h2>
+                            <p>Missions illimitées</p>
+                            <p>Profil mis en avant</p>
+                            <p>Support prioritaire</p>
+                            <button class="btn btn-primary">Choisir Pro</button>
+                        </div>
+                    </div>
+
+                    <!-- Plan Entreprise -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center p-4">
+                            <h3>Entreprise</h3>
+                            <h2 class="my-3">80€</h2>
+                            <p>Gestion avancée des projets</p>
+                            <p>Equipe dédiée</p>
+                            <p>Support premium</p>
+                            <button class="btn btn-dark">Contacter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section FAQ (Mise à niveau : 5 questions obligatoires pour le projet) -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Questions fréquentes</h2>
+                <div class="accordion" id="faqAccordion">
+                    <!-- Question 1 (Origine) -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                Puis-je changer de formule ?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                Oui, vous pouvez changer de formule à tout moment.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 (Origine) -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                Les paiements sont-ils sécurisés ?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Toutes les transactions sont sécurisées via nos partenaires.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 (Ajout barème) -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Existe-t-il un engagement minimum ?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Non, nos offres Pro et Entreprise sont sans aucun engagement de durée. Vous êtes libre d'arrêter quand vous voulez.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 (Ajout barème) -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                Comment fonctionne la mise en avant du profil ?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Avec l'abonnement Pro, votre profil apparaît en tête des résultats de recherche lorsque les entreprises cherchent un freelance.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 (Ajout barème) -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                Quels sont les moyens de paiement acceptés ?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Nous acceptons les cartes bancaires internationales (Visa, MasterCard) ainsi que les services de Mobile Money locaux.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer commun -->
+    <footer class="bg-dark text-white text-center p-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 AfriTalent - Tous droits réservés</p>
+        </div>
+    </footer>
 
     <!-- Bootstrap 5 via CDN : JS -->
-    <script src="https://jsdelivr.net"></script>
-    <!-- Script JavaScript personnel (vide) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- Votre script JavaScript personnel (Vierge au Commit 2) --> 
     <script src="js/main.js"></script>
+
 </body>
 </html>

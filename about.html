@@ -3,19 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriTalent</title>
-    <!-- Bootstrap 5 via CDN : CSS -->
+    <!-- Bootstrap 5 via CDN : feuille de style -->
     <link href="https://jsdelivr.net" rel="stylesheet">
-    <!-- Feuille de style personnelle (vide) -->
+    <!-- votre feuille de style personnelle -->
     <link rel="stylesheet" href="css/style.css">
+    <title>AfriTalent - À propos</title>
 </head>
 <body>
 
-    <!-- Aucun contenu ici pour le Commit 1 -->
+    <!-- Navbar commune -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">AfriTalent</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section Histoire -->
+        <section class="py-5">
+            <div class="container">
+                <h1 class="text-center mb-4">À propos de AfriTalent</h1>
+                <p class="text-center">
+                    AfriTalent est une plateforme africaine qui connecte les freelances tech
+                    avec des entreprises à la recherche de talents qualifiés.
+                </p>
+                <div class="text-center mt-4">
+                    <img src="c:\Users\user\Documents\DOSSIER ISI 2025 _2026\HTML_CSS_javascript\IDRISSA-Mane-AfriTalent\images\premium_photo-1707155465527-c5a2935b21cc.avif" class="img-fluid rounded" alt="Équipe AfriTalent">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Chiffres Clés (Structure brute Bento Grid exigée par le sujet) -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Nos Chiffres Clés</h2>
+                <div class="bento-grid-about">
+                    <div class="bento-card-about card-1">
+                        <h3>+2500</h3>
+                        <p>Freelances Inscrits</p>
+                    </div>
+                    <div class="bento-card-about card-2">
+                        <h3>+800</h3>
+                        <p>Entreprises Partenaires</p>
+                    </div>
+                    <div class="bento-card-about card-3">
+                        <h3>+12000</h3>
+                        <p>Missions Réalisées</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Equipe -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Notre Équipe</h2>
+                <div class="row">
+                    <!-- Membre 1 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 text-center">
+                            <img src="c:\Users\user\Documents\DOSSIER ISI 2025 _2026\HTML_CSS_javascript\IDRISSA-Mane-AfriTalent\images\photo-1637684666587-91e51b10a555.avif" class="card-img-top" alt="CEO">
+                            <div class="card-body">
+                                <h5 class="card-title">Idrissa Mane</h5>
+                                <p class="mb-0 text-muted">CEO & Fondateur</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Membre 2 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 text-center">
+                            <img src="c:\Users\user\Documents\DOSSIER ISI 2025 _2026\HTML_CSS_javascript\IDRISSA-Mane-AfriTalent\images\istockphoto-1364618551-612x612 (1).webp" class="card-img-top" alt="Designer">
+                            <div class="card-body">
+                                <h5 class="card-title">Awa Ndiaye</h5>
+                                <p class="mb-0 text-muted">UI/UX Designer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Membre 3 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 text-center">
+                            <img src="c:\Users\user\Documents\DOSSIER ISI 2025 _2026\HTML_CSS_javascript\IDRISSA-Mane-AfriTalent\images\istockphoto-2218000498-612x612.webp" class="card-img-top" alt="Développeur">
+                            <div class="card-body">
+                                <h5 class="card-title">Moussa Diallo</h5>
+                                <p class="mb-0 text-muted">Développeur Front-End</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Membre 4 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100 text-center">
+                            <img src="c:\Users\user\Documents\DOSSIER ISI 2025 _2026\HTML_CSS_javascript\IDRISSA-Mane-AfriTalent\images\premium_photo-1707155465391-5cfc46746a34.avif" class="card-img-top" alt="Marketing">
+                            <div class="card-body">
+                                <h5 class="card-title">Fatou Kane</h5>
+                                <p class="mb-0 text-muted">Responsable Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Valeurs -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Nos Valeurs</h2>
+                <div class="row text-center">
+                    <div class="col-md-3 mb-3">
+                        <h4>Innovation</h4>
+                        <p>Nous encourageons la créativité et les nouvelles idées.</p>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <h4>Communauté</h4>
+                        <p>Nous créons des opportunités pour les talents africains.</p>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <h4>Accessibilité</h4>
+                        <p>Une plateforme simple et accessible à tous.</p>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <h4>Excellence</h4>
+                        <p>Nous visons toujours la qualité et le professionnalisme.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer commun -->
+    <footer class="bg-dark text-white text-center p-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 AfriTalent - Tous droits réservés</p>
+        </div>
+    </footer>
 
     <!-- Bootstrap 5 via CDN : JS -->
-    <script src="https://jsdelivr.net"></script>
-    <!-- Script JavaScript personnel (vide) -->
+    <script src="https://jsdelivr.net"></script> 
+    <!-- Votre script JavaScript personnel (Vierge au Commit 2) --> 
     <script src="js/main.js"></script>
 </body>
 </html>

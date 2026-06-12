@@ -3,19 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriTalent</title>
-    <!-- Bootstrap 5 via CDN : CSS -->
-    <link href="https://jsdelivr.net" rel="stylesheet">
-    <!-- Feuille de style personnelle (vide) -->
+    <title>AfriTalent - Contact</title>
+    <!-- Bootstrap 5 via CDN : feuille de style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- votre feuille de style personnelle -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Aucun contenu ici pour le Commit 1 -->
+    <!-- Navbar commune -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">AfriTalent</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <h1 class="text-center mb-5">Contactez-nous</h1>
+
+                <div class="row">
+                    <!-- Formulaire -->
+                    <div class="col-md-6 mb-4">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Nom</label>
+                                <input type="text" class="form-control" placeholder="Votre nom">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Prénom</label>
+                                <input type="text" class="form-control" placeholder="Votre prénom">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="Votre email">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Sujet</label>
+                                <select class="form-select">
+                                    <option selected disabled>Choisissez un sujet...</option>
+                                    <option>Support</option>
+                                    <option>Freelance</option>
+                                    <option>Entreprise</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" rows="5" placeholder="Votre message"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                        </form>
+                    </div>
+
+                    <!-- Informations -->
+                    <div class="col-md-6">
+                        <h3>Nos Informations</h3>
+                        <p>📧 contact@afritalent.com</p>
+                        <p>📞 +221 77 000 00 00</p>
+                        <p>📍 Dakar, Sénégal</p>
+
+                        <!-- la carte  -->
+                        <iframe
+                                 src="https://google.com"
+                                  width="100%"
+                                 height="300"
+                                 style="border:0;"
+                                 allowfullscreen=""
+                                 loading="lazy">
+                        </iframe>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer commun -->
+    <footer class="bg-dark text-white text-center p-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 AfriTalent - Tous droits réservés</p>
+        </div>
+    </footer>
 
     <!-- Bootstrap 5 via CDN : JS -->
-    <script src="https://jsdelivr.net"></script>
-    <!-- Script JavaScript personnel (vide) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+    <!-- Votre script JavaScript personnel (Vierge au Commit 2) --> 
     <script src="js/main.js"></script>
+
 </body>
 </html>
