@@ -334,3 +334,31 @@ body.dark-theme #theme-toggle {
     color: #ffffff !important;
 }
 
+/* DEBUT DU COMMIT 7  */
+
+/* État initial caché des sections */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out !important;
+}
+
+/* État affiché dès que le JS injecte la classe */
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Style du bouton retour en haut */
+#back-to-top {
+    background-color: var(--primary-color, #2563eb);
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: var(--secondary-color, #0f172a);
+    transform: translateY(-3px);
+}
